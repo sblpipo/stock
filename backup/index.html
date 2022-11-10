@@ -17,7 +17,7 @@
             let temp = '';
             let container = document.getElementById('container')
             for(let i = 0 ; i < ary.length ; i++) {
-                temp += '<p><a href="./' + ary[i] + '" target="_blank">' + ary[i] + '</a></p>';
+                temp = '<p><a href="./' + ary[i] + '" target="_blank">' + ary[i] + '</a></p>' + temp;
             }
             container.innerHTML = temp;
         });
